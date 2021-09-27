@@ -17,6 +17,7 @@ input[type=number] {
     font-size: 8em;
     padding: 10px;
     text-align: center;
+    outline: none;
 
 }
 #fahrenheit {
