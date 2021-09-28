@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg,rgb(230, 206, 100),rgb(211, 145, 71));
+    color: white;
+    font-family:'Poppins',sans-serif ;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input , form button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;   
+    background: white;
+}
+form button {
+    color: rgb(211, 145, 71);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: rgb(211, 145, 71);
+    color: white;
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+.todo {
+    background: white;
+    margin: 0.5rem;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.8s ease; 
+}
+.todo li {
+    flex: 1;
+    padding: 0rem 0.5rem;
+}
+.todo button{
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.trash-btn {
+    background-color: rgb(246, 66, 66);
+}
+.complete-btn {
+    background-color: rgb(17, 195, 17);
+
+}
+.complete-btn:hover {
+    background-color: white;
+    color: green;
+}
+.trash-btn:hover {
+    background-color: white;
+    color: red;
+}
+.fa-trash , .fa-check {
+    pointer-events: none;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
