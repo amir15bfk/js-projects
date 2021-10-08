@@ -12,6 +12,19 @@ body {
     flex-direction: column;
     background-image: linear-gradient(to right,rgb(41, 221, 221),rgb(157, 228, 110));
 }
+.main {
+    background: linear-gradient(to right top,rgba(255,255,255,0.6),rgba(255,255,255,0.2));
+    padding:1rem 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+}
 section {
     display: grid;
     grid-template-columns: repeat(4,8rem);
@@ -34,10 +47,13 @@ section {
     height: 100%;  
     position: absolute; 
     pointer-events: none;
+
 }
 .back{
+
     background-color: white;
     backface-visibility: hidden;
+
 }
 .toggleCard {
     transform: rotateY(180deg);
@@ -50,11 +66,38 @@ button ,h1 {
     background-image: linear-gradient(to right,rgb(41, 221, 221),rgb(157, 228, 110));
     font-size: 1.5rem;
     padding: 0.5rem;
-    margin: 0.5rem;
     box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
     cursor: pointer;
+    border-radius: 5px;
 }
+h1 {
+    margin-bottom: 1rem;
+}
+button {
+    margin-top: 1rem;
+}
+
 button:hover {
     background-image: linear-gradient(to right,rgb(157, 228, 110),rgb(41, 221, 221));
 
 }
+.circle1,
+.circle2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px;
+}
+.circle1{
+    left: 20px;
+    bottom: 50px;
+    background: linear-gradient(to right top,rgba(157, 228, 110,0.8),rgba(157, 228, 110,0.2));
+}
+.circle2 {
+    top: 20px;
+    right: 50px;
+    background: linear-gradient(to right top,rgba(41, 221, 221,0.8),rgba(41, 221, 221,0.2));
+}
+
